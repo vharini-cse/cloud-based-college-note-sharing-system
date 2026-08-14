@@ -1,0 +1,424 @@
+/* =========================================
+   GENERAL
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f6f2;
+    color: #292321;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e5dfd8;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-box {
+    width: 42px;
+    height: 42px;
+    background: #6f263d;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.logo h2 {
+    color: #6f263d;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.logo span {
+    color: #77706b;
+    font-size: 12px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #413b38;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #6f263d;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #6f263d,
+        #8b3a52
+    );
+    color: #ffffff;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    padding: 80px 0;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #b98291;
+}
+
+.hero .tag {
+    color: #f1dce2;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #f1cbd5;
+}
+
+.hero-text {
+    max-width: 600px;
+    font-size: 18px;
+    color: #f4e8eb;
+    margin-bottom: 32px;
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.button {
+    display: inline-block;
+    background: #ffffff;
+    color: #6f263d;
+    text-decoration: none;
+    border: none;
+    padding: 13px 24px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #f1dce2;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   NOTES SECTION
+   ========================================= */
+
+.notes-section {
+    padding: 85px 0;
+    background: #f8f6f2;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading .tag {
+    color: #6f263d;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    color: #292321;
+    margin-bottom: 10px;
+}
+
+.section-heading p:last-child {
+    color: #746d68;
+}
+
+
+/* =========================================
+   SIX SUBJECT CARDS
+   ========================================= */
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.note-card {
+    background: #ffffff;
+    border: 1px solid #e5dfd8;
+    border-radius: 12px;
+    padding: 30px;
+    min-height: 270px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.note-card:hover {
+    transform: translateY(-6px);
+    border-color: #a66a7a;
+    box-shadow: 0 12px 30px rgba(60, 35, 40, 0.10);
+}
+
+.note-number {
+    color: #9b6877;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.note-card h3 {
+    color: #6f263d;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.note-card p {
+    color: #6d6763;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.view-button {
+    margin-top: auto;
+    align-self: flex-start;
+    background: transparent;
+    border: 1px solid #6f263d;
+    color: #6f263d;
+    padding: 9px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.view-button:hover {
+    background: #6f263d;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   SHARE SECTION
+   ========================================= */
+
+.share-section {
+    background: #ffffff;
+    padding: 80px 0;
+    border-top: 1px solid #e5dfd8;
+}
+
+.share-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.share-content h2 {
+    color: #6f263d;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.share-content p {
+    color: #6d6763;
+    max-width: 500px;
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+#noteForm {
+    background: #f8f6f2;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e5dfd8;
+}
+
+#noteForm input,
+#noteForm select {
+    width: 100%;
+    padding: 13px 14px;
+    margin-bottom: 15px;
+    border: 1px solid #d9d1cb;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #292321;
+    font-size: 14px;
+    outline: none;
+}
+
+#noteForm input:focus,
+#noteForm select:focus {
+    border-color: #6f263d;
+    box-shadow: 0 0 0 3px rgba(111, 38, 61, 0.08);
+}
+
+#noteForm .button {
+    width: 100%;
+    background: #6f263d;
+    color: #ffffff;
+}
+
+#noteForm .button:hover {
+    background: #521b2d;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background: #292321;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content h3 {
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+
+.footer-content p {
+    color: #bdb5b0;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .notes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .share-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .nav-content {
+        flex-direction: column;
+        padding: 18px 0;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 420px;
+    }
+
+    .hero-content {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .notes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .share-content h2 {
+        font-size: 32px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

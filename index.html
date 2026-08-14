@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Notes | Note Sharing System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="container nav-content">
+
+            <div class="logo">
+                <div class="logo-box">CN</div>
+
+                <div>
+                    <h2>College Notes</h2>
+                    <span>Student Learning Hub</span>
+                </div>
+            </div>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#notes">Notes</a>
+                <a href="#share">Share Notes</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="container hero-content">
+
+            <p class="tag">COLLEGE STUDENT COMMUNITY</p>
+
+            <h1>
+                Learn Together.<br>
+                <span>Share Notes.</span>
+            </h1>
+
+            <p class="hero-text">
+                A simple platform for college students to discover,
+                share and access useful academic notes.
+            </p>
+
+            <a href="#notes" class="button">
+                Explore Notes →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Notes Section -->
+    <section class="notes-section" id="notes">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="tag">AVAILABLE NOTES</p>
+
+                <h2>Explore Study Materials</h2>
+
+                <p>
+                    Find useful notes and learning resources
+                    shared by students.
+                </p>
+
+            </div>
+
+
+            <!-- Six Subject Cards -->
+            <div class="notes-grid">
+
+
+                <!-- Subject 1 -->
+                <div class="note-card">
+
+                    <span class="note-number">01</span>
+
+                    <h3>Computer Science</h3>
+
+                    <p>
+                        Programming, data structures,
+                        algorithms and computer science
+                        study materials.
+                    </p>
+
+                    <button class="view-button">
+                        View Notes
+                    </button>
+
+                </div>
+
+
+                <!-- Subject 2 -->
+                <div class="note-card">
+
+                    <span class="note-number">02</span>
+
+                    <h3>Web Technology</h3>
+
+                    <p>
+                        HTML, CSS, JavaScript and modern
+                        web development learning resources.
+                    </p>
+
+                    <button class="view-button">
+                        View Notes
+                    </button>
+
+                </div>
+
+
+                <!-- Subject 3 -->
+                <div class="note-card">
+
+                    <span class="note-number">03</span>
+
+                    <h3>Cloud Computing</h3>
+
+                    <p>
+                        Cloud concepts, virtualization,
+                        deployment and cloud services.
+                    </p>
+
+                    <button class="view-button">
+                        View Notes
+                    </button>
+
+                </div>
+
+
+                <!-- Subject 4 -->
+                <div class="note-card">
+
+                    <span class="note-number">04</span>
+
+                    <h3>Database Management</h3>
+
+                    <p>
+                        Database concepts, SQL, data models
+                        and database management study notes.
+                    </p>
+
+                    <button class="view-button">
+                        View Notes
+                    </button>
+
+                </div>
+
+
+                <!-- Subject 5 -->
+                <div class="note-card">
+
+                    <span class="note-number">05</span>
+
+                    <h3>Artificial Intelligence</h3>
+
+                    <p>
+                        AI concepts, machine learning,
+                        intelligent systems and algorithms.
+                    </p>
+
+                    <button class="view-button">
+                        View Notes
+                    </button>
+
+                </div>
+
+
+                <!-- Subject 6 -->
+                <div class="note-card">
+
+                    <span class="note-number">06</span>
+
+                    <h3>Computer Networks</h3>
+
+                    <p>
+                        Networking concepts, protocols,
+                        communication systems and security.
+                    </p>
+
+                    <button class="view-button">
+                        View Notes
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Share Notes Section -->
+    <section class="share-section" id="share">
+
+        <div class="container share-content">
+
+            <div>
+
+                <p class="tag">SHARE KNOWLEDGE</p>
+
+                <h2>Have useful notes?</h2>
+
+                <p>
+                    Help your fellow students by sharing
+                    your academic notes and resources.
+                </p>
+
+            </div>
+
+
+            <form id="noteForm">
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Your name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="noteTitle"
+                    placeholder="Note title"
+                    required
+                >
+
+                <select id="subject" required>
+
+                    <option value="">
+                        Select subject
+                    </option>
+
+                    <option value="Computer Science">
+                        Computer Science
+                    </option>
+
+                    <option value="Web Technology">
+                        Web Technology
+                    </option>
+
+                    <option value="Cloud Computing">
+                        Cloud Computing
+                    </option>
+
+                    <option value="Database Management">
+                        Database Management
+                    </option>
+
+                    <option value="Artificial Intelligence">
+                        Artificial Intelligence
+                    </option>
+
+                    <option value="Computer Networks">
+                        Computer Networks
+                    </option>
+
+                </select>
+
+                <button type="submit" class="button">
+                    Share Note
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+                <h3>College Notes</h3>
+                <p>Student Learning Hub</p>
+            </div>
+
+            <p>
+                © 2026 College Note Sharing System
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
